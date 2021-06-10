@@ -1,0 +1,3 @@
+O projeto foi feito em angular, suas funcionalidades estão implementadas nos components 
+criei uma api fake para simulação do envio, recuperação e edição dos dados,
+apenas a função de exclusão não foi testada. 

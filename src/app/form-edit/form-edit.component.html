@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row" id="row">
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Dados do Produto</h4>
+            <form class="needs-validation">
+                <div class="row">
+                    <div class=" col-md-6 mb-3">
+
+                        <label for="name ">Nome</label>
+
+                        <input type="text " class="form-control " name="name " id="name " placeholder=" " [(ngModel)]="products.nome" value="{{products.nome}}" required>
+
+                    </div>
+                    <div class="col-md-6 mb-3 ">
+                        <label for="descricao ">Descrição</label>
+                        <input type="text " class="form-control " id="descricao " name="descricao " placeholder=" " [(ngModel)]="products.descricao" value="{{products.descricao}}" required>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3 ">
+                        <label for="preco ">Preço</label>
+                        <input type="text " class="form-control " id="price " name="price " placeholder=" " [(ngModel)]="products.price" value="{{products.price}}" required>
+
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-6 mb-1 ">
+                        <label for="fornecedor ">Fornecedor</label>
+                        <input type="text " class="form-control " id="fornecedor " name="fornecedor " placeholder=" " [(ngModel)]="products.fornecedor" value="{{products.fornecedor}}" required>
+
+                    </div>
+                    <div class="col-md-6 mb-1 ">
+                        <label for="observacao ">Observação</label>
+                        <input type="text " class="form-control " style="height: 150px; " id="observacao " name="observacao " placeholder=" " [(ngModel)]="products.observacao" value="{{products.observacao}}" required>
+
+                    </div>
+                </div>
+                <hr class="mb-2 ">
+                <button class="btn btn-primary btn-block " id="btn " (click)="editarProdutos() " type="submit ">Concluir!</button>
+            </form>
+            <div style="margin-top: 60px; "></div>
+
+        </div>
+    </div>
+</div>

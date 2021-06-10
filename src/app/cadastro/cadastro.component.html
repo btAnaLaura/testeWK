@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./assets/img/weknow.jpg" alt="">
+        <h2>Faça já o seu cadastro!</h2>
+    </div>
+
+    <div class="row" id="row">
+        <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Dados do Produto</h4>
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="idt">ID:</label>
+                        <input type="number" class=" form-control " min="0" max="50" name="id " [(ngModel)]=products.id id="id " placeholder="Ex.: 0000 " maxlength="4 " required>
+                    </div>
+                    <div class=" col-md-6 mb-3 ">
+
+                        <label for="name ">Nome</label>
+
+                        <input type="text " class="form-control " name="name " [(ngModel)]=products.name id="name " placeholder=" " required>
+                        <div class="invalid-feedback ">
+                            Digite o nome do produto.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3 ">
+                        <label for="descricao ">Descrição</label>
+                        <input type="text " class="form-control " id="descricao " [(ngModel)]=products.descricao name="descricao " placeholder=" " required>
+                        <div class="invalid-feedback ">
+                            Breve descrição.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3 ">
+                        <label for="preco ">Preço</label>
+                        <input type="text " class="form-control " id="price " [(ngModel)]=products.price name="price " placeholder=" " required>
+                        <div class="invalid-feedback ">
+                            Digite o preço do produto
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-md-6 mb-1 ">
+                        <label for="fornecedor ">Fornecedor</label>
+                        <input type="text " class="form-control " id="fornecedor " [(ngModel)]=products.fornecedor name="fornecedor " placeholder=" " required>
+                        <div class="invalid-feedback ">
+                            Digite o fornecedor
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-1 ">
+                        <label for="observacao ">Observação</label>
+                        <input type="text " class="form-control " style="height: 150px; " id="observacao " [(ngModel)]=products.observacao name="observacao " placeholder=" " required>
+                        <div class="invalid-feedback ">
+                            Breve observação se necessário.
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-2 ">
+                <button class="btn btn-primary btn-block " id="btn " (click)="cadastrarProdutos() " type="submit ">Concluir!</button>
+            </form>
+            <div style="margin-top: 60px; "></div>
+        </div>
+    </div>
+</div>

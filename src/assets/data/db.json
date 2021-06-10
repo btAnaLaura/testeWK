@@ -1,0 +1,60 @@
+{
+  "produtos": [
+    {
+      "id": "001",
+      "nome": "sdasdasd",
+      "descricao": "dasdasd",
+      "price": "3,10",
+      "fornecedor": "lalala",
+      "observacao": "observacao teste "
+    },
+    {
+      "id": "01",
+      "nome": "asasas",
+      "descricao": "asasasas",
+      "price": "sasas",
+      "fornecedor": "00sa0sa",
+      "observacao": ""
+    },
+    {
+      "id": "0125",
+      "nome": "teste de producao",
+      "descricao": "jasdjkabsdasbsd",
+      "price": "0,20",
+      "fornecedor": "kytsaacak.bicasjbx",
+      "observacao": ",n c.kcjbacdgcudgcdicub"
+    },
+    {
+      "id": "1235",
+      "nome": "ashbasjhdv",
+      "descricao": "ajbsd akj",
+      "price": "0,21",
+      "fornecedor": "aksndlaskdn",
+      "observacao": "samd nasdjadkajdbkasjdjsb"
+    },
+    {
+      "id": "0212",
+      "nome": "2154",
+      "descricao": "21askln",
+      "price": "lkajnhaslikh",
+      "fornecedor": "lasmdaslkn",
+      "observacao": ",n salksjh"
+    },
+    {
+      "id": "sasa",
+      "nome": "asas",
+      "descricao": "asas",
+      "price": "asas",
+      "fornecedor": "asas",
+      "observacao": "asasas"
+    },
+    {
+      "id": "cada",
+      "nome": "cascascasc",
+      "descricao": "cascasc",
+      "price": "ascasc",
+      "fornecedor": "cascasc",
+      "observacao": "cascasc"
+    }
+  ]
+}

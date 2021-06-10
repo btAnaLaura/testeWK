@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row" style="margin-bottom: 25px;">
+        <a class="btn btn-primary" href="/cadastro">Novo Registro</a>
+
+    </div>
+    <table>
+        <thead>
+            <th class="titulo">ID</th>
+            <th class="titulo">Nome</th>
+            <th class="titulo">Descrição</th>
+            <th class="titulo">Preço</th>
+            <th class="titulo">Fornecedor</th>
+            <th class="titulo">Observação</th>
+            <th class="titulo">Ação</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td class="linhas">{{product.id}}</td>
+                <td class="linhas">{{product.name}}</td>
+                <td class="linhas">{{product.descricao}}</td>
+                <td class="linhas">{{product.price}}</td>
+                <td class="linhas">{{product.descricao}} </td>
+                <td class="linhas">{{product.Observacao}}</td>
+                <td class="linhas">
+                    <a class="btn btn-sm btn-success" style="margin-left:10px;" routerLink="/form-edit/{{product.id}}">Editar</a>
+                    <button class="btn btn-sm btn-danger" style="color: #fff !important; margin: 10px;" (click)="excluirProduto(product.id)">Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        listarProdutos();
+    </script>
